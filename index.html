@@ -12,10 +12,25 @@
    
     <body>
         <header>
-            <h1>Juego del Ahorcado</h1>
+            <div class="logo">
+                <h1><img src=imagenes/logo.png></h1>
+            </div>
         </header>
         <main>
-            
+            <div class="canvas">
+                <canvas id="horca" width="600" height="400" style="display:none"></canvas>
+            </div>
+            <div class="letras">
+                <canvas id="letras" width="600" height="200"></canvas>
+            </div>
+            <div class="botones">
+                <input type="button" value="Iniciar Juego" class="iniciar" id="boteniniciar" onclick="iniciarJuego()">
+                <input type="button" value="Agregar Nueva Palabra" class="agregar" id="botenagregar">
+                <input type="button" value="Guardar y Empezar" class="guardar" id="botenguardar" style="display:none;">
+                <input type="button" value="Cancelar" class="cancelar" id="botencancelar" style="display:none">
+                <input type="button" value="Nuevo Juego" class="nuevo" id="botennuevo" style="display:none">
+                <input type="button" value="Desistir" class="desistir" id="botendesisitir" style="display:none">
+            </div>
         </main>
         <script src="juego-del-ahorcado.js"></script>
     </body>
