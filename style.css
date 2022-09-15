@@ -1,3 +1,37 @@
 body{
-    background-image: url(/imagenes/background.jpg);
+    background-image: url(https://raw.githubusercontent.com/G0D0Y/Juego-del-Ahorcado/master/imagenes/background.jpg);
+    background-position: top center;
+    background-size: auto;
+}
+
+.logo{
+    display: flex;
+    font-family: 'Callie Chalk Font', sans-serif;
+    padding: 50px 0;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+.canvas, .letras{
+    display: flex;
+    justify-content: center;
+}
+
+.botones {
+    display: block;
+    margin: 10px 50px;
+    text-align: center;
+}
+
+.iniciar, .agregar, .guardar, .cancelar, .nuevo, .desistir{
+    background-color:transparent;
+    border: none;
+    font-family: 'Callie Chalk Font', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    margin: 10px 20px;
 }

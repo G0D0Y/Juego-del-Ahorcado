@@ -5,6 +5,7 @@
     <head>    
         <meta charset = "UTF-8">
         <title>Juego del ahorcado</title>
+        <link href="http://fonts.cdnfonts.com/css/callie-chalk-font" rel="stylesheet">
         <link rel="stylesheet" href = "reset.css">
         <link rel="stylesheet" href = "style.css">
        
@@ -13,23 +14,27 @@
     <body>
         <header>
             <div class="logo">
-                <h1><img src=imagenes/logo.png></h1>
+                <h1>juego del ahoracado</h1>
             </div>
         </header>
         <main>
             <div class="canvas">
-                <canvas id="horca" width="600" height="400" style="display:none"></canvas>
+                <canvas id="horca" width="600" height="350" style="display:none"></canvas>
             </div>
             <div class="letras">
-                <canvas id="letras" width="600" height="200"></canvas>
+                <canvas id="letras" width="600" height="120"></canvas>
             </div>
-            <div class="botones">
-                <input type="button" value="Iniciar Juego" class="iniciar" id="boteniniciar" onclick="iniciarJuego()">
-                <input type="button" value="Agregar Nueva Palabra" class="agregar" id="botenagregar">
-                <input type="button" value="Guardar y Empezar" class="guardar" id="botenguardar" style="display:none;">
-                <input type="button" value="Cancelar" class="cancelar" id="botencancelar" style="display:none">
-                <input type="button" value="Nuevo Juego" class="nuevo" id="botennuevo" style="display:none">
-                <input type="button" value="Desistir" class="desistir" id="botendesisitir" style="display:none">
+            <div class="botones" id="botones1">
+                <input type="button" value="Iniciar Juego" class="iniciar" id="botoniniciar" onclick="iniciarJuego()">
+                <input type="button" value="Agregar Nueva Palabra" class="agregar" id="botonagregar">
+            </div>
+            <div class="botones" id="botones2" style="display:none;">
+                <input type="button" value="Guardar y Empezar" class="guardar" id="botonguardar">
+                <input type="button" value="Cancelar" class="cancelar" id="botoncancelar">
+            </div>
+            <div class="botones" id="botones3" style="display:none;">
+                <input type="button" value="Nuevo Juego" class="nuevo" id="botonnuevo">
+                <input type="button" value="Desistir" class="desistir" id="botondesistir">
             </div>
         </main>
         <script src="juego-del-ahorcado.js"></script>
